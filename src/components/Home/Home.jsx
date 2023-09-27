@@ -32,7 +32,7 @@ const Home = () => {
   const handleSearch = () => {
     // Filter data based on the search query
     const filtered = donationData.filter((item) =>
-      item.title.toLowerCase().includes(searchQuery.toLowerCase())
+      item.category.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setFilteredData(filtered);
   };
